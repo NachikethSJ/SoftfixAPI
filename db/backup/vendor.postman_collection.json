@@ -1,0 +1,1800 @@
+{
+	"info": {
+		"_postman_id": "2efc1364-3896-4fa7-9419-3ecd298124dc",
+		"name": "vendor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12513681"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "bookinglocation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lattitude\":\"65454652.245\",\r\n    \"longitude\":\"-6544652.245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/bookinglocation",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookinglocation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookinglocationupdate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"lattitude\":\"26.8467\",\r\n    \"longitude\":\"80.9462\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/bookinglocationupdate",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookinglocationupdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookinglocationdelete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":2}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/bookinglocationdelete",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookinglocationdelete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookinglocationview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/bookinglocationview",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookinglocationview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookingdetails",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"locationId\":1,\r\n    \"employeeId\":1,\r\n    \"serviceTypeId\":1,\r\n    \"bookingDate\":\"2023/04/08\",\r\n    \"bookingStartTime\":\"12:00\",\r\n    \"bookingEndTime\":\"12:00\",\r\n    \"promocode\":\"2454\",\r\n    \"tax\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/bookingdetails",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookingdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookingdetailsupdate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"locationId\":1,\r\n    \"employeeId\":1,\r\n    \"serviceTypeId\":1,\r\n    \"bookingDate\":\"2023/04/08\",\r\n    \"bookingStartTime\":\"12:00\",\r\n    \"bookingEndTime\":\"12:00\",\r\n    \"promocode\":\"245454\",\r\n    \"tax\":12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/bookingdetailsupdate",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookingdetailsupdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookingdetailsdelete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/bookingdetailsdelete",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookingdetailsdelete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bookingdetailsview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/bookingdetailsview",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"bookingdetailsview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reschdeuled",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serviceTypeId\":1,\r\n    \"bookingId\":1,\r\n    \"oldBookingDate\":\"2023/04/08\",\r\n    \"oldBookingStartTime\":\"12:00\",\r\n    \"oldBookingEndTime\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/reschdeuled",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"reschdeuled"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reschdeuledupdate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"serviceTypeId\":1,\r\n    \"bookingId\":2,\r\n    \"oldBookingDate\":\"2023/04/08\",\r\n    \"oldBookingStartTime\":\"12:00\",\r\n    \"oldBookingEndTime\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/reschdeuledupdate",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"reschdeuledupdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reschdeuleddelete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/reschdeuleddelete",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"reschdeuleddelete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reschdeuledview",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/user/reschdeuledview",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"reschdeuledview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "canclled",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serviceTypeId\":1,\r\n    \"bookingId\":1,\r\n    \"oldBookingDate\":\"2023/04/08\",\r\n    \"oldBookingStartTime\":\"12:00\",\r\n    \"oldBookingEndTime\":\"12:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/user/canclled",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"user",
+								"canclled"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"branchName\":\"newshop\",\r\n    \"shopName\":\"newshop\",\r\n    \"mobile\":\"8114075844\",\r\n    \"let\":\"26.8467\",\r\n    \"lng\":\"80.9462\",\r\n    \"description\":\"dgklsdk dlfhkl kdlfkhl kdf\",\r\n    \"gstNo\":\"18AABCU9603R1ZM\",\r\n    \"pinNo\":\"pinNo\",\r\n    \"panNo\":\"ABCDE4758D\",\r\n    \"aadhaar\":\"697890694739\",\r\n    \"address\":\"lucknow up\",\r\n    \"pin\":\"254782\",\r\n    \"country\":\"1\",\r\n    \"state\":\"3\",\r\n    \"city\":\"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteusers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDM3MzYzNX0.FM-aWeKWRZ92QgCE12VNA0zN7oLaBU2tmlw8nXA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/deleteusers",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deleteusers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userupdate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"4\",\r\n    \"branchName\":\"sdlgsgk\",\r\n    \"shopName\":\"xkdvlskd\",\r\n    \"mobile\":\"sdksglk\",\r\n    \"location\":\"lklk\",\r\n    \"description\":\"dgklsdk dlfhkl kdlfkhl kdf\",\r\n    \"gstNo\":\"18AABCU9603R\",\r\n    \"pinNo\":\"pinNo\",\r\n    \"panNo\":\"ABCDE4758D\",\r\n    \"aadhaar\":\"697890694739\",\r\n    \"address\":\"lucknow up\",\r\n    \"pin\":\"254782\",\r\n    \"country\":\"1\",\r\n    \"state\":\"3\",\r\n    \"city\":\"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/userupdate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"userupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewregistrations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDgwMDU0Mn0.GxK0Ba3Ot3ii7tnkJ7p99zK-rOWQlTkZ0NmT1mZwc5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/vendor/viewregistrations",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vendor",
+						"viewregistrations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/ankit/Pictures/Screenshots/Screenshot (12).png"
+						},
+						{
+							"key": "id",
+							"value": "12",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storeemply",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDgwMDU0Mn0.GxK0Ba3Ot3ii7tnkJ7p99zK-rOWQlTkZ0NmT1mZwc5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employName\":\"test2\",\r\n    \"registerId\":2,\r\n    \"password\":\"123456\",\r\n    \"mobile\":8114075448\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/storeemploy",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"storeemploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateemploy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"3\",\r\n    \"employName\":\"test5\",\r\n    \"registerId\":2,\r\n    \"password\":\"123456\",\r\n    \"mobile\":8114075448\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/updateemploy",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updateemploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmploy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":3}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/deleteEmploy",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deleteEmploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "baranchnamelist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/baranchnamelist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"baranchnamelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storeservice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serviceName\":\"screen4\",\r\n    \"shopId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/storeservice",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"storeservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewempoly",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/viewempoly",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"viewempoly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewservice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/viewservice",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"viewservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteService",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/deleteService",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deleteService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storeservicetype",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDgwMDU0Mn0.GxK0Ba3Ot3ii7tnkJ7p99zK-rOWQlTkZ0NmT1mZwc5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serviceName\":1,\r\n    \"type\":\"Test Service\",\r\n    \"price\":\"2.5\",\r\n    \"timeTaken\":\"2.1\",\r\n    \"offer\":\"0\",\r\n    \"details\":\"fgh\",\r\n    \"persontype\":\"dfgd\",\r\n    \"termAndcondition\":\"dfg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/storeservicetype",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"storeservicetype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewservicetype",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/viewservicetype",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"viewservicetype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatservicetype",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"1\",\r\n    \"serviceName\":1,\r\n    \"type\":\"Test Service abc\",\r\n    \"price\":\"2.5\",\r\n    \"timeTaken\":\"2.1\",\r\n    \"offer\":\"0\",\r\n    \"details\":\"fgh\",\r\n    \"persontype\":\"dfgd\",\r\n    \"termAndcondition\":\"dfg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/updatservicetype",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updatservicetype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storeslots",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serviceTypeId\":2,\r\n    \"date\":\"2023/11/20\",\r\n    \"startTime\":\"10:00:00\",\r\n    \"endTime\":\"11:00:00\",\r\n    \"employeeId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/storeslots",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"storeslots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateslots",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"serviceTypeId\":2,\r\n    \"date\":\"2023/11/21\",\r\n    \"startTime\":\"06:00:00\",\r\n    \"endTime\":\"10:00:00\",\r\n    \"employeeId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/updateslots",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updateslots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "servicenamelist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/servicenamelist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"servicenamelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteslots",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/deleteslots",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deleteslots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storepackage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDgwMDU0Mn0.GxK0Ba3Ot3ii7tnkJ7p99zK-rOWQlTkZ0NmT1mZwc5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"packageName\":\"package16\",\r\n    \"startDate\":\"2023/12/1\",\r\n    \"endDate\":\"2023/12/31\",\r\n    \"price\":\"7000\",\r\n    \"details\":\"hjkghh\",\r\n    \"termAndcondition\":\"vgnfhdg\",\r\n    \"detailsdata\":[\r\n        {\r\n            \"serviceTypeId\":2,\r\n            \"offer\":5\r\n        },\r\n        {\r\n            \"serviceTypeId\":1,\r\n            \"offer\":5\r\n        },\r\n        {\r\n            \"serviceTypeId\":3,\r\n            \"offer\":5\r\n        }\r\n    ]\r\n   \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/vendor/storepackage",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vendor",
+						"storepackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "slotslist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/slotslist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"slotslist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatepackage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"packageName\":\"testPackager demo\",\r\n    \"startDate\":\"2023/12/1\",\r\n    \"endDate\":\"2023/12/31\",\r\n    \"price\":\"7000\",\r\n    \"serviceTypeId\":\"2\",\r\n    \"actualPrice\":\"200.00\",\r\n    \"offerPrice\":\"100\",\r\n    \"timeTaken\":\"3\",\r\n    \"offer\":\"30\",\r\n    \"details\":\"hjkghh\",\r\n    \"termAndcondition\":\"vgnfhdg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/updatepackage",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updatepackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletepackage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/deletepackage",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deletepackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "packagelist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/packagelist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"packagelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storemembership",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDgwMDU0Mn0.GxK0Ba3Ot3ii7tnkJ7p99zK-rOWQlTkZ0NmT1mZwc5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"membershipName\":\"testPackager3 demo\",\r\n    \"packageId\":\"1\",\r\n    \"startDate\":\"2023/12/1\",\r\n    \"endDate\":\"2023/12/31\",\r\n    \"price\":\"7000\",\r\n    \"serviceTypeId\":\"2\",\r\n    \"offer\":\"30\",\r\n    \"details\":\"hjkghh\",\r\n    \"termAndcondition\":\"vgnfhdg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/vendor/storemembership",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vendor",
+						"storemembership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "membershiplist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/membershiplist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"membershiplist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMembership",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/deleteMembership",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deleteMembership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storesupport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Amit Yadav\",\r\n    \"message\":\"this is test message\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/storesupport",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"storesupport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatesupport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"tedst\",\r\n    \"message\":\"this is terst update message\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/updatesupport",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updatesupport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletesupport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/deletesupport",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deletesupport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "membershiplist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/membershiplist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"membershiplist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateMembership",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"membershipName\":\"membership\",\r\n    \"packageId\":\"1\",\r\n    \"startDate\":\"2023/12/1\",\r\n    \"endDate\":\"2023/12/31\",\r\n    \"price\":\"7000\",\r\n    \"serviceTypeId\":\"2\",\r\n    \"actualPrice\":\"200.00\",\r\n    \"offerPrice\":\"100\",\r\n    \"timeTaken\":\"3\",\r\n    \"offer\":\"30\",\r\n    \"details\":\"hjkghh\",\r\n    \"termAndcondition\":\"vgnfhdg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/updateMembership",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updateMembership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creattoken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mobile\":8114075844}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/creattoken",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"creattoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "offerpackagelist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/offerpackagelist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"offerpackagelist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "membershiplist",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/membershiplist",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"membershiplist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getoffer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"let\":\"26.9170\",\r\n    \"lng\":\"80.9543\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getoffer",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getoffer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewshop",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"let\":\"26.9170\",\r\n    \"lng\":\"80.9543\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/viewshop",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"viewshop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storereview",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"comment\":\"good\",\"rate\":3,\"serviceId\":2\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/storereview",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"storereview"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewmembership for user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"let\":\"26.9170\",\r\n    \"lng\":\"80.9543\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/viewmembership",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"viewmembership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewpackage for user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"let\":\"26.9170\",\r\n    \"lng\":\"80.9543\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/user/servicedetails",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"servicedetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewuserservice for user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/viewuserservice",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"viewuserservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "packagedetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"packageId\":\"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/user/packagedetails",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"packagedetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "membershipDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjg0NDc1Njk4NDQsImlhdCI6MTY4MDQ0MTM0NX0.BRyCddNfx12trA53kXL87fJdZXMkuOHT3_nUqVFSYYY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"membershipId\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/user/membershipDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"membershipDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storemembershipdetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDgwMDU0Mn0.GxK0Ba3Ot3ii7tnkJ7p99zK-rOWQlTkZ0NmT1mZwc5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"membershipId\":1,\r\n    \"serviceTypeId\":1,\r\n    \"offer\":25,\r\n    \"noOfTime\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/vendor/storemembershipdetails",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vendor",
+						"storemembershipdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storepackagedetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjgxMTQwNzU4NDQsImlhdCI6MTY4MDgwMDU0Mn0.GxK0Ba3Ot3ii7tnkJ7p99zK-rOWQlTkZ0NmT1mZwc5Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"packageId\":4,\r\n    \"serviceTypeId\":1,\r\n    \"offer\":25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/vendor/storepackagedetails",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"vendor",
+						"storepackagedetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
