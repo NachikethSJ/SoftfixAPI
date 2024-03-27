@@ -25,7 +25,7 @@ yarn-error.log*
 
 /public
 
-index.js
+#index.js
 
 #logs
 
